@@ -1,0 +1,19 @@
+# Private originals and raw disclosure material
+private/
+evidence/private/
+evidence/raw/
+
+# Authentication and browser-session artifacts
+.env
+.env.*
+*.har
+*cookies*.json
+*storage-state*.json
+*session*.json
+
+# Local tooling
+.DS_Store
+Thumbs.db
+node_modules/
+coverage/
+*.log

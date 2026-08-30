@@ -1,0 +1,53 @@
+{
+  "authorizationBoundary": {
+    "id": "F-01",
+    "subject": {
+      "subscriptionClass": "lower-tier",
+      "advancedCapabilityEntitled": false
+    },
+    "expected": {
+      "decision": "deny",
+      "stage": "entitlement-check"
+    },
+    "observed": {
+      "httpAccepted": true,
+      "permissionDenial": false,
+      "advancedCapabilitySignal": true,
+      "stage": "capacity-control",
+      "repeatable": true
+    },
+    "source": "sanitized-research-notes"
+  },
+  "quotaAccounting": {
+    "id": "F-02",
+    "baseline": {
+      "Thinking": { "remaining": 80, "total": 80 },
+      "Pro": { "remaining": 25, "total": 25 }
+    },
+    "afterControl": {
+      "Thinking": { "remaining": 75, "total": 80 },
+      "Pro": { "remaining": 24, "total": 25 }
+    },
+    "afterTestedPath": {
+      "Thinking": { "remaining": 75, "total": 80 },
+      "Pro": { "remaining": 24, "total": 25 }
+    },
+    "controlRequests": 5,
+    "testedPathRequests": "14+",
+    "source": "sanitized-research-notes"
+  },
+  "counterConsistency": {
+    "id": "F-03",
+    "primary": "Deep Think",
+    "related": "Thinking",
+    "before": {
+      "Deep Think": { "remaining": 10, "total": 10 },
+      "Thinking": { "remaining": 1499, "total": 1500 }
+    },
+    "after": {
+      "Deep Think": { "remaining": 10, "total": 10 },
+      "Thinking": { "remaining": 1497, "total": 1500 }
+    },
+    "source": "sanitized-research-notes"
+  }
+}
